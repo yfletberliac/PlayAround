@@ -1,0 +1,387 @@
+html * {
+    font-family: 'Lato';
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+.alert-drag {
+    background-color: #FFFFFF;
+    border-color: #59718A;
+    color: #1A242F;
+    border: 2px dashed;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.angular-ui-tree-handle {
+    background: #f8faff;
+    border: 1px solid #dae2ea;
+    color: #7c9eb2;
+    padding: 0;
+    margin-bottom: 7px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    display: flex;
+}
+
+.angular-ui-tree-handle:hover {
+    color: #438eb9;
+    background: #f4f6f7;
+    border-color: #dce2e8;
+}
+
+.art-tree-column {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    flex-grow: 1;
+}
+
+.art-tree-column .label {
+    float: right;
+    line-height: 37px;
+    width: 150px;
+    text-align: left;
+    height: 100%;
+    background: #EFEFEF;
+    border-radius: 0;
+}
+
+.art-tree-column .label-count {
+    background: #59718A;
+}
+
+.art-tree-column:first-child {
+    border-right: 1px solid #dae2ea;
+    max-width: 50px;
+    flex-basis: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.art-tree-column:last-child {
+    border-left: 1px solid #dae2ea;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    max-width: 40px;
+    flex-basis: 40px;
+    padding: 0;
+}
+
+.art-tree-column:last-child a {
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.art-tree-column:last-child:hover {
+    background-color: #E74C3C;
+}
+
+
+.angular-ui-tree-nodes .angular-ui-tree-nodes {
+    padding-left: 50px;
+}
+
+.angular-ui-tree-nodes .angular-ui-tree-nodes li:last-child {
+    padding-bottom: 15px;
+}
+
+.angular-ui-tree-placeholder {
+    background: #f0f9ff;
+    border: 2px dotted #bed2db;
+}
+
+.tree-node {
+    border: 1px solid #dae2ea;
+    background: #f8faff;
+    color: #7c9eb2;
+}
+
+.tree-node-content {
+    margin: 10px;
+}
+
+.tree-handle {
+    padding: 10px;
+    background: #428bca;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.displaygroup {
+    cursor: pointer;
+}
+
+.displaygroup .collapser {
+    color: #2c3e50;
+}
+
+.collection {
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.collection:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5em;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -moz-radial-gradient(50% 0%, 50% 100%, #cccccc 0%, rgba(204, 204, 204, 0) 100%);
+    background-image: -webkit-radial-gradient(50% 0%, 50% 100%, #cccccc 0%, rgba(204, 204, 204, 0) 100%);
+    background-image: radial-gradient(50% 100% at 50% 0%, #cccccc 0%, rgba(204, 204, 204, 0) 100%);
+}
+
+.collection:last-child:after {
+    content: none;
+}
+
+.collection:hover {
+    background-color: rgb(246, 249, 253);
+}
+
+.collection .container {
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.collection .collection-art {
+    padding: 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-slice-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: #2C3E50;
+    border: 3px solid #2C3E50;
+    margin: 0 auto;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.collection.active .img-slice-container {
+    height:400px;
+}
+
+.collection:hover .img-slice-container {
+    opacity: 0.8;
+}
+
+.img-slice-container .collection-art-inner {
+    height: 100%;
+    position:relative;
+    float: right;
+    right: 50%;
+}
+
+.img-slice-container .collection-art img {
+    height: 100%;
+    position: relative;
+    right: -50%;
+}
+
+.collection-count {
+    position: absolute;
+    right: 18px;
+    top: 160px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.collection-art-right .collection-count {
+    left: 18px;
+}
+
+.collection.active .collection-count {
+    opacity: 0
+}
+
+.collection-expand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 3em;
+}
+
+.icon-chevron {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+    height: 0.2em;
+    width: 5em;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.collection:hover .icon-chevron {
+    opacity: 0.8;
+    margin-top: 0.5em;
+}
+
+.icon-chevron:before, .icon-chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #2C3E50;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.icon-chevron:before {
+    left: 0;
+    -webkit-transform: skew(0deg, 10deg);
+    -moz-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+.icon-chevron:after {
+    right: 0;
+    -webkit-transform: skew(0deg, -10deg);
+    -moz-transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -10deg);
+    -o-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+}
+
+.collection.active .icon-chevron:before {
+    -webkit-transform: skew(0deg, -10deg);
+    -moz-transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -10deg);
+    -o-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+}
+
+.collection.active .icon-chevron:after {
+    -webkit-transform: skew(0deg, 10deg);
+    -moz-transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    -o-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+}
+
+.arrow {
+    background-image: url("/assets/img/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 33px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .collection-art-right {
+        float: right;
+    }
+
+    .collection-text-right {
+        text-align: right;
+    }
+}
+
+/* ANIMATIONS for left and right
+============================================================================= */
+.view-animate-container {
+    position: relative;
+    height: auto; 
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+    -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+}
+
+.right .view-animate.ng-enter {
+    -webkit-transform: translate3d(150%, 0, 0);
+    -moz-transform: translate3d(150%, 0, 0);
+    -ms-transform: translate3d(150%, 0, 0);
+    -o-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0); 
+}
+
+.right .view-animate.ng-enter.ng-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.right .view-animate.ng-leave.ng-leave-active {
+    -webkit-transform: translate3d(-150%, 0, 0);
+    -moz-transform: translate3d(-150%, 0, 0);
+    -ms-transform: translate3d(-150%, 0, 0);
+    -o-transform: translate3d(-150%, 0, 0);
+    transform: translate3d(-150%, 0, 0); 
+}
+
+.left .view-animate.ng-enter {
+    -webkit-transform: translate3d(-150%, 0, 0);
+    -moz-transform: translate3d(-150%, 0, 0);
+    -ms-transform: translate3d(-150%, 0, 0);
+    -o-transform: translate3d(-150%, 0, 0);
+    transform: translate3d(-150%, 0, 0); 
+}
+
+.left .view-animate.ng-enter.ng-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); 
+}
+
+.left .view-animate.ng-leave.ng-leave-active {
+    -webkit-transform: translate3d(150%, 0, 0);
+    -moz-transform: translate3d(150%, 0, 0);
+    -ms-transform: translate3d(150%, 0, 0);
+    -o-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0); 
+}
