@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name translateMeApp.controller:AboutCtrl
+ * @name PlayAroundApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the translateMeApp
+ * Controller of the PlayAroundApp
  */
-angular.module('translateMeApp')
+angular.module('PlayAroundApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

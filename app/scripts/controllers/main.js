@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name translateMeApp.controller:MainCtrl
+ * @name PlayAroundApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the translateMeApp
+ * Controller of the PlayAroundApp
  */
-angular.module('translateMeApp')
+angular.module('PlayAroundApp')
   .controller('MainCtrl', function ($scope, localStorageService) {
 	$scope.addTodo = function () {
 	  $scope.todos.push($scope.todo);

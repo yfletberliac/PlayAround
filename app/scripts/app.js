@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name translateMeApp
+ * @name PlayAroundApp
  * @description
- * # translateMeApp
+ * # PlayAroundApp
  *
  * Main module of the application.
  */
 angular
-  .module('translateMeApp', [
+  .module('PlayAroundApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
