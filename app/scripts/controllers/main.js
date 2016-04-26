@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name PlayAroundApp.controller:MainCtrl
+ * @name LBPApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the PlayAroundApp
+ * Controller of the LBPApp
  */
-angular.module('PlayAroundApp')
+angular.module('LBPApp')
   .controller('MainCtrl', function ($scope, localStorageService) {
 	$scope.addTodo = function () {
 	  $scope.todos.push($scope.todo);
@@ -23,4 +23,8 @@ angular.module('PlayAroundApp')
 	$scope.$watch('todos', function () {
 	  localStorageService.set('todos', $scope.todos);
 	}, true);
+
+	$scope.imagePathLouise = 'images/IMG_1389.jpg';
+	$scope.imagePathYannis = 'images/IMG_1388.jpg';
+  
   });

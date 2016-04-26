@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name PlayAroundApp.controller:AboutCtrl
+ * @name LBPApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the PlayAroundApp
+ * Controller of the LBPApp
  */
-angular.module('PlayAroundApp')
+angular.module('LBPApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

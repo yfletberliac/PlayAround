@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name PlayAroundApp
+ * @name LBPApp
  * @description
- * # PlayAroundApp
+ * # LBPApp
  *
  * Main module of the application.
  */
 angular
-  .module('PlayAroundApp', [
+  .module('LBPApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.sortable',
-    'LocalStorageModule'
+    'LocalStorageModule',
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,11 +26,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
